@@ -1,17 +1,15 @@
 <!doctype html>
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
-<html lang="en"> 
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <title>Client</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="shortcut icon" href="favicon.ico" />
-  <!--font-awesome link for icons-->
-  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css" >
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+  <link rel="stylesheet" media="screen" href="assets/css/style.css">
 </head>
 
 <body>
@@ -19,18 +17,66 @@
   <div class="container">
     <!--header section start-->
     <header>
-      
+      <section class="header-section">
+        <div class="wrapper">
+          <div class="header-info">
+            <h1 class="logo">
+              <a href="#FIXME" target="_blank" rel="noopener noreferrer">logo</a>
+            </h1>
+          </div>
+          <ul class="menu">
+            <li class="menu-list">
+              <a href="#FIXME" target="_blank" rel="noopener noreferrer">start</a>
+            </li>
+            <li class="menu-list">
+              <a href="#FIXME" target="_blank" rel="noopener noreferrer">stop</a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </header>
     <!--header section start-->
     <!--main section start-->
     <main>
+      <section class="drag-drop-section">
+        <div class="wrapper">
+          <h2 class="priorities-heading">
+            set your priorities
+          </h2>
+          <ul id="box" class="drop-box">
+            <li class="box-layout">
+              <h3 class="box-heading">high</h3>
+            </li>
+            <li class="box-layout">
+              <h3 class="box-heading">medium</h3>
+            </li>
+            <li class="box-layout">
+              <h3 class="box-heading">low</h3>
+            </li>
+          </ul>
 
+          <ul class="task-button">
+            <li class="task-box"><span id="one">task 1</span></li>
+            <li class="task-box"><span id="two">task 2</span></li>
+            <li class="task-box"><span id="three">task 3</span></li>
+            <li class="task-box"><span id="four">task 4</span></li>
+          </ul>
+        </div>
+      </section>
     </main>
     <!--main section end-->
 
     <!--footer section start-->
-    <footer>      
-
+    <footer>
+      <section class="footer-section">
+        <div class="wrapper">
+          <div class="header-info">
+            <h4 class="footer-logo">
+              <a href="#FIXME" target="_blank" rel="noopener noreferrer">logo</a>
+            </h4>
+          </div>
+        </div>
+      </section>
     </footer>
     <!--footer section end-->
 
@@ -38,4 +84,5 @@
   <!--container end-->
   <script src="assets/js/script.js"></script>
 </body>
+
 </html>
