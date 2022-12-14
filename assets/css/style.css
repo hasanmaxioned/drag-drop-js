@@ -97,9 +97,7 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-section.header-section {
-  background: #000;
-}
+section.header-section {  background: #000; }
 
 h1.logo a {
   color: #fff;
@@ -128,9 +126,7 @@ ul.menu li a {
   border-right: 1px solid #fff;
 }
 
-li.menu-list:last-child a {
-  border-right: none;
-}
+li.menu-list:last-child a {  border-right: none; }
 
 /*=================================
   Header styling ends here
@@ -149,53 +145,52 @@ h2.priorities-heading {
 }
 
 ul#box {
-  margin: 40px 0 60px 0;
+  margin: 45px 0;
   display: flex;
   justify-content: space-between;
 }
 
-ul#box li {
-  height: 200px;
+li.box-layout {
   border: 1px solid #333;
-  border-radius: 8px;
-  flex-basis: 22%;
+  border-radius: 10px;
+  flex-basis: 33%;
   text-align: center;
 }
 
-li.box-layout:nth-child(1) h3 {
-  background: #FF0000;
+li.drop-here { 
+  width: 100%;
+  height: 200px; 
+}
+
+li.box-layout:not(:nth-child(3n)) {  margin-right: 55px; }
+
+.high-heading { background: #FF0000; }
+
+.medium-heading { background: #FFA500; }
+
+.low-heading { background: #FFFF00; }
+
+.high-heading, 
+.medium-heading, 
+.low-heading {
   padding: 14px 0;
   border-radius: 6px;
-}
-
-li.box-layout:nth-child(2) h3 {
-  background: #FFA500;
-  padding: 14px 0;
-  border-radius: 8px;
-}
-
-li.box-layout:nth-child(3) h3 {
-  background: #FFFF00;
-  padding: 14px 0;
-  border-radius: 8px;
-}
-
-h3.box-heading {
   font-family: emoji;
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-li.task-box {
-  background: #000;
+.drag-box {
   padding: 14px 25px;
-  color: #fff;
-  font-family: emoji;
-  text-transform: uppercase;
-  font-weight: 600;
   border-radius: 14px;
   margin-right: 10px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  font-family: emoji;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 /*=================================
