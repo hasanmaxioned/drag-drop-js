@@ -36,6 +36,8 @@ function restart() {
 }
 restart();
 
+
+
 let draggedItem;
 for (let i = 0; i < dragBox.length; i++) {
   const item = dragBox[i];
@@ -83,24 +85,60 @@ for (let j = 0; j < dropHere.length; j++) {
 
     list.addEventListener("drop", function (e) {
       // console.log("drop func run");
-      dragBox.forEach(function (element, idx) {
-        let valueOfBox = element.getAttribute('data-value');
-        console.log(valueOfBox);
-      })
-      dropHere.forEach (function (drEl) {
-        if (drEl.getElementsByClassName("drag-box")) {
-          console.log("hii");
+      // draggedItem.addEventListener('click', function () {
+      //   for (const active of dragBox) {
+      //     active.classList.add('active');
+      //   }
+      // })
+      
+        // if () {
+        //   console.log("span two print");
+        // }
+        // console.log(valueOfBox);
+      // dropHere.forEach (function (drEl) {
+      //   if (drEl.getElementsByClassName("drag-box")) {
+      //     console.log("hii");
+      //   }
+      // })
+      // dropHere.forEach(function (element, idx) {
+      //   let valueOfBox = element.getAttribute('data-value');
+      // })
+
+      draggedItem.classList.add('active');
+      let abc = draggedItem.querySelectorAll('.active');
+
+      let xyz = draggedItem.getAttribute("data-value");
+      console.log(xyz);
+
+      let a = dragBox[0];
+      let b = dragBox[1];
+      let c = dragBox[2];
+      let d = dragBox[3]
+      for (let k = 0; k < dropHere.length; k++) {
+        if (xyz < c) {
+        
+          list.append(draggedItem);
+          console.log("att value is", xyz);
         }
-      })
-      list.append(draggedItem);
+      }
+
+      
+      // console.log(list)
+      // list.forEach( function (li) {
+      //   console.log(li);
+      // })
       // console.log(draggedItem);
       
       list.style.backgroundColor = "rgb(219 184 154)";
       list.style.borderRadius = "10px";
-      console.log(draggedItem);
+
+      
+      // console.log(draggedItem);
     });
 
   }
+
+  
 
 
   // asynchronus function 
