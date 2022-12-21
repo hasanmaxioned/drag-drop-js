@@ -193,6 +193,10 @@ li.box-layout:not(:nth-child(3n)) {  margin-right: 55px; }
   text-transform: uppercase;
 }
 
+.active {
+  background: #f00;
+}
+
 /*=================================
   main styling ends here
 =================================*/
